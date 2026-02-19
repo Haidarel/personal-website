@@ -29,6 +29,12 @@ body {
   gap: 32px;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -39,38 +45,22 @@ body {
 .about-container {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  justify-content: space-between;
+  justify-content:  -between;
   gap: 64px;
 }
 
 .porto-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
 }
+
+
 
 .button-container {
   display: flex;
   gap: 12px;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-}
-
-.card {
-  height: fit-content;
-  background-color: #151515;
-  border-style: solid;
-  border-color: #202020;
-  border-radius: 12px;
-  border-width: 3px;
-  padding: 24px 32px;
-  
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
 }
 
 .profile {
@@ -162,7 +152,27 @@ body {
   color: #D02752;
   transform: translateY(-2px);
 }
+
+.btn-align-end {
+  display: flex;
+  justify-content: end;
+}
+
 /* Additional */
+
+.tag-container {
+  display: flex;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.tag {
+  padding: 8px 16px;
+  background-color: #D02752;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 999px;
+}
 
 .image-small {
   height: 2rem;
@@ -219,6 +229,52 @@ body {
   margin-bottom: 24px;
 }
 
+/* Card Section */
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  height: fit-content;
+  background-color: #151515;
+  border-style: solid;
+  border-color: #202020;
+  border-radius: 12px;
+  border-width: 3px;
+  padding: 24px 28px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.porto-items {
+  height: fit-content;
+  background-color: #151515;
+  border-style: solid;
+  border-color: #202020;
+  border-radius: 12px;
+  border-width: 3px;
+  padding: 24px 28px;
+  
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.porto-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.merge-column {
+  grid-column: span 2;
+}
+
 .card-logo {
   display: flex;
   flex-direction: row;
@@ -228,6 +284,12 @@ body {
 .card-logo img {
   height: 4.5rem;
   width: 4.5rem;
+}
+
+.porto-image {
+  width: 30rem;
+  height: 25rem;
+  object-fit: cover;
 }
 
 /* Text Section */

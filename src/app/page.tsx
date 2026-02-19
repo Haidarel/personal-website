@@ -3,6 +3,7 @@ import HeroSection from "../components/hero";
 import SerciveSection from "../components/layanan";
 import AboutSection from "../components/about";
 import PortofolioSection from "../components/portofolio";
+import ExperienceSection from "../components/experiences";
 import Footer from "../components/footer";
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
         <SerciveSection />
         <AboutSection />
         <PortofolioSection />
+        <ExperienceSection />
       </main>
     </>
   );
