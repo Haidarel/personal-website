@@ -35,6 +35,12 @@ body {
   gap: 12px;
 }
 
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -64,6 +70,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
+  gap: 24px;
 }
 
 /* Button Section */

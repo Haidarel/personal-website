@@ -27,6 +27,7 @@ export default function ExperienceSection() {
                         <p className="text-secondary">Software Engineer Major</p>
                     </div>
                 </div>
+
                 <div className="card">
                     <div className="exp-title">
                         <div className="icon-full">

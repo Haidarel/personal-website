@@ -35,6 +35,7 @@ export default function Home() {
         <AboutSection />
         <PortofolioSection />
         <ExperienceSection />
+        <Footer />
       </main>
     </>
   );
