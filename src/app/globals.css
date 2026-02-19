@@ -49,15 +49,6 @@ body {
   gap: 64px;
 }
 
-.porto-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 24px;
-}
-
-
-
 .button-container {
   display: flex;
   gap: 12px;
@@ -229,6 +220,33 @@ body {
   margin-bottom: 24px;
 }
 
+.exp-title {
+  display: flex;
+  gap: 12px;
+}
+
+.exp-items {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 24px;
+
+  border: none;
+  border-left: #333333 solid;
+  border-width: 3px;
+}
+
+.icon-full {
+  padding: 12px 12px;
+  background-color: #D02752;
+  border: none;
+  border-radius: 999px;
+}
+
+.icon-full img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 /* Card Section */
 
 .card-container {
@@ -265,6 +283,20 @@ body {
   gap: 24px;
 }
 
+.porto-items-reverse {
+  height: fit-content;
+  background-color: #151515;
+  border-style: solid;
+  border-color: #202020;
+  border-radius: 12px;
+  border-width: 3px;
+  padding: 24px 28px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 24px;
+}
+
 .porto-info {
   display: flex;
   flex-direction: column;
@@ -288,7 +320,7 @@ body {
 
 .porto-image {
   width: 30rem;
-  height: 25rem;
+  height: 18rem;
   object-fit: cover;
 }
 
@@ -344,7 +376,7 @@ p {
 
 .text-secondary {
   color: #FFFFFF;
-  opacity: 40%;
+  opacity: 45%;
 }
 
 .bold {

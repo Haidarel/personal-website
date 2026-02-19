@@ -21,7 +21,25 @@ export default function PortofolioSection() {
                                 <p className="tag">Capstone</p>
                             </div>
                         </div>
-                        <div className="btn-align-end">
+                        <div>
+                            <button className="btn-link">Learn more ↗</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="porto-items-reverse merge-column">
+                    <img src="/dummy.svg" alt="img" className="porto-image" />
+                    <div className="porto-info">
+                        <div className="flex-container">
+                            <h4>Project Name</h4>
+                            <p className="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore omnis aspernatur soluta consectetur. Ducimus, quia! Aspernatur sit labore hic.</p>
+                            <div className="tag-container">
+                                <p className="tag">Capstone</p>
+                                <p className="tag">Capstone</p>
+                                <p className="tag">Capstone</p>
+                            </div>
+                        </div>
+                        <div>
                             <button className="btn-link">Learn more ↗</button>
                         </div>
                     </div>
