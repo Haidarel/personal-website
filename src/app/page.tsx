@@ -1,6 +1,7 @@
 import Navigation from "../components/navigation";
 import HeroSection from "../components/hero";
 import SerciveSection from "../components/layanan";
+import ServiceCards from "../components/serviceSection";
 import AboutSection from "../components/about";
 import PortofolioSection from "../components/portofolio";
 import ExperienceSection from "../components/experiences";
@@ -31,6 +32,7 @@ export default function Home() {
       </section> */}
       <main className="main-content">
         <HeroSection />
+        <ServiceCards />
         <SerciveSection />
         <AboutSection />
         <PortofolioSection />
