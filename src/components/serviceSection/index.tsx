@@ -1,6 +1,5 @@
 "use client";
 
-import { secureHeapUsed } from 'crypto';
 import { useState } from 'react';
 
 interface ServiceCard {
@@ -8,33 +7,33 @@ interface ServiceCard {
   number: string;
   title: string;
   description: string;
-  tags?: string[]
+  tags: string[]
 }
-
+  
 export default function ServiceCards() {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+  const [hoveredCard, setHoveredCard] = useState<number | null>(2);
 
   const services: ServiceCard[] = [
     {
       id: 1,
       number: '01.',
-      title: 'Website Developer.',
-      description: 'Make your idea come true. 3 Years learning experiences in Software Engineering.',
-      tags: ["Next.js", "React.js", "Node.js", "Tailwind.css", "TypeScript"]
+      title: 'UI Designer.',
+      description: 'Visualize your best idea. Self-Employed experience in UI Designer.',
+      tags: ['Figma', 'Photoshop', 'Illustrator']
     },
     {
       id: 2,
       number: '02.',
-      title: 'UI Designer.',
-      description: ' Visualize your best idea. Self-Employed experience in UI Designer.',
-      tags: ["Figma", "Photoshop", "Illustrator"]
+      title: 'Website Developer.',
+      description: 'Make your idea come true. 3 Years learning experiences in Software Engineering.',
+      tags: ['Next.js', 'React.js', 'Node.js', 'Tailwind.css', 'TypeScript']
     },
     {
       id: 3,
       number: '03.',
       title: 'Motion Graphic.',
       description: 'Let the world know your great idea. I do Love to do visual-storytelling',
-      tags: ["After Effect", "Alight Motion"]
+      tags: ['After Effect', 'Alight Motion']
     }
   ];
 
@@ -50,12 +49,21 @@ export default function ServiceCards() {
             key={service.id}
             className={`service-card ${hoveredCard === service.id ? 'active' : ''}`}
             onMouseEnter={() => setHoveredCard(service.id)}
-            onMouseLeave={() => setHoveredCard(null)}
+            onMouseLeave={() => setHoveredCard(2)}
           >
             <div className="card-content">
               <h3 className="card-number">{service.number}</h3>
               <h4 className="card-title">{service.title}</h4>
               <p className="card-description">{service.description}</p>
+
+              <div className="tags-container">
+                {service.tags.map((tag, index) => (
+                  <span key={index} className="tag-card">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
               <button className="card-button">
                 Learn More →
               </button>

@@ -33,7 +33,6 @@ export default function Home() {
       <main className="main-content">
         <HeroSection />
         <ServiceCards />
-        <SerciveSection />
         <AboutSection />
         <PortofolioSection />
         <ExperienceSection />
