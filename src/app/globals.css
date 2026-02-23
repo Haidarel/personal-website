@@ -634,14 +634,33 @@ html {
 
 .porto-left {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .porto-card {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
   cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.porto-card.active {
+  background: linear-gradient(135deg, #8A244B 0%, #D02752 100%);
+  box-shadow: 0 20px 40px #D0275240;
+  z-index: 10;
+}
+
+.porto-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.4;
+  transition: all 0.3s ease;
 }
 
 .porto-desc {
@@ -650,16 +669,36 @@ html {
   line-height: 1.6;
 }
 
+.porto-btn {
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.porto-content {
+  position: relative;
+  z-index: 1;
+}
+
 .porto-card .porto-desc,
 .porto-card .porto-btn {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .porto-card.active .porto-desc,
 .porto-card.active .porto-btn {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 1rem;
 }
